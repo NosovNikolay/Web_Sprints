@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Superhero Form</h1>
+    <form action="/">
+        <fieldset>
+            <fieldset>
+                <legend>About the Superhero</legend>
+                <span>Real Name</span>
+                <input autofocus type="text" placeholder="Superhero real name">
+                <span>Superhero Name</span>
+                <input autofocus type="text" placeholder="Superhero real name">
+                <span>Age</span>
+                <input type="number" min="1" max="100">
+                <br><br>
+                <span>About</span>
+                <textarea rows="4" cols="60" placeholder="Information about the superhero, max 500 symbols"></textarea>
+                <br><br>
+                <span>Photo</span>
+                <input name="myFile" type="file">
+            </fieldset>
+            <fieldset>
+                <legend>Powers</legend>
+                <input type="checkbox"><label>Telekinesis</label>
+                <input type="checkbox"><label>Super strength or speed</label>
+                <input type="checkbox"><label>Shapeshifting</label>
+                <input type="checkbox"><label>Flight</label>
+                <input type="checkbox"><label>Elemental control</label>
+                <input type="checkbox"><label>Other</label>
+                <br>
+                <label for="volume">Level of control: </label>
+                <input type="range" id="volume" name="volume" min="1" max="10">
+            </fieldset>
+            <fieldset>
+                <legend>Origin of Powers</legend>
+                <legend>Origin of Powers</legend>
+                <input type="radio" name="powers"> Unknown
+                <input type="radio" name="powers"> Freak lab accident
+                <input type="radio" name="powers"> Chosen by an ancientwise being
+                <input type="radio" name="powers"> The superhero is not human
+                <input type="radio" name="powers"> Other
+            </fieldset>
+            <br>
+            <button type="reset">CLEAR</button>
+            <button type="submit">SEND</button>
+            <br><br>
+        </fieldset>
+    </form>
+</body>
+
+</html>
