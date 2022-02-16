@@ -1,0 +1,53 @@
+p {
+    width: 100%;
+    margin: 0;
+    text-align: right;
+    font-family: Verdana, Tahoma, sans-serif;
+    box-sizing: border-box;
+    float: right;
+}
+
+.name {
+    color: rgba(255, 255, 255, 0.5);
+    size: 9px;
+}
+
+.alias {
+    color: white;
+    size: 12px;
+}
+
+div {
+    width: 270px;
+    height: 140px;
+    border-radius: 5px;
+    float: left;
+    padding: 10px;
+    margin: 20px;
+}
+
+img {
+    height: 182px;
+    position: relative;
+    bottom: 71px;
+}
+
+.first {
+    background-image: linear-gradient(#4568DC, #B06AB3);
+}
+
+.second {
+    background-image: linear-gradient(#e52d27, #b31217);
+}
+
+.third {
+    background-image: linear-gradient(#000, #61045F);
+}
+
+.fourth {
+    background-image: linear-gradient(#e52d27, #000);
+}
+
+.spider {
+    bottom: 48.5px;
+}

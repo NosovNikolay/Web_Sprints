@@ -1,0 +1,64 @@
+span {
+    margin: auto;
+    position: relative;
+}
+
+h1 {
+    background-color: red;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+nav {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    transition: all .1s cubic-bezier(.17, .67, .83, .67);
+}
+
+.dropbtn {
+    background-color: #4a5d9b;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    transition: all .1s cubic-bezier(.17, .67, .83, .67);
+}
+
+.dropbtn a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 109px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.content a {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.content a:hover {
+    background-color: #f1f1f1
+}
+
+.drop:hover .content {
+    display: block;
+}
+
+.drop:hover .dropbtn {
+    background-color: #39456d;
+}

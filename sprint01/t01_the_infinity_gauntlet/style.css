@@ -1,0 +1,12 @@
+img {
+    height: 50px;
+}
+
+.gauntlet {
+    height: 200px;
+}
+
+.gauntlet:hover~table tbody tr:nth-child(2n + 1) td:nth-child(2n + 1),
+.gauntlet:hover~table tbody tr:nth-child(2n) td:nth-child(2n) {
+    visibility: hidden;
+}

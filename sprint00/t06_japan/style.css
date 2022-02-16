@@ -1,0 +1,15 @@
+div {
+    padding: 50px 100px 50px 100px;
+    border: 2px solid #ccc;
+    height: 100px;
+    width: 100px;
+}
+
+.japan::after {
+    content: "";
+    background: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}

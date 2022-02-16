@@ -1,0 +1,15 @@
+.main {
+    padding: 10px 10px 20px 10px;
+    display: flex;
+    background-color: #45525F;
+}
+
+.menu {
+    background-color: #495c70;
+    border: 1px;
+    border-color: #ccc;
+}
+
+h1 {
+    text-align: center;
+}

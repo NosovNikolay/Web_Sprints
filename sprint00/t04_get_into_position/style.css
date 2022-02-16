@@ -1,0 +1,16 @@
+h1 {
+    background-color: red;
+    font-size: 4em;
+}
+
+body {
+    text-align: center;
+}
+
+span {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: relative;
+    bottom: -18px;
+}

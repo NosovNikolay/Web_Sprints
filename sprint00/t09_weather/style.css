@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dayWeather {
+    margin: 0px 5px;
+    width: 120px;
+    height: 180;
+    text-align: center;
+}
+
+.dayWeather:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .5);
+}
+
+.weekWeather {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.date {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    background: #6294B3;
+}
+
+.temperature {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+}

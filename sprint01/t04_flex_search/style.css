@@ -1,0 +1,25 @@
+#form_search {
+    display: flex;
+    width: calc(100% - 100px);
+    height: 2em;
+    padding: 0 10px;
+    color: green;
+}
+
+button,
+input {
+    box-sizing: border-box;
+    padding: 0 10px 0 10px;
+    color: green;
+    height: 2em;
+    float: left;
+}
+
+input {
+    width: calc(100% - 100px);
+}
+
+input:hover,
+button:hover {
+    color: red;
+}
