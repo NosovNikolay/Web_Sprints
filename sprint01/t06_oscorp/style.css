@@ -2,7 +2,10 @@
     display: flex;
     padding: 10px;
     background-color: #823028;
+<<<<<<< HEAD
     justify-content: space-between;
+=======
+>>>>>>> 20084164bc6d4db007b8909afa0f303a6bb0173c
 }
 
 .navigation {
@@ -10,6 +13,7 @@
     background-color: #ccc;
 }
 
+<<<<<<< HEAD
 .box {
     display: flex;
     margin: 0 -5px;
@@ -46,15 +50,22 @@
     visibility: visible;
 }
 
+=======
+>>>>>>> 20084164bc6d4db007b8909afa0f303a6bb0173c
 .name {
     text-align: left;
     font-size: large;
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 .aviable {
     display: flex;
     padding: 10px;
+=======
+.menu {
+    margin-left: 150px;
+>>>>>>> 20084164bc6d4db007b8909afa0f303a6bb0173c
 }
 
 .search {
@@ -65,6 +76,14 @@
     background-color: #823028;
 }
 
+<<<<<<< HEAD
+=======
+.phone {
+    align-self: right;
+    text-align: right;
+}
+
+>>>>>>> 20084164bc6d4db007b8909afa0f303a6bb0173c
 :placeholder-shown {
     text-align: center;
 }
@@ -252,6 +271,7 @@ footer div:nth-child(2) {
     .detailsPage div:not(.noth) {
         text-align: center;
     }
+<<<<<<< HEAD
 }
 
 .custom-checkbox {
@@ -305,4 +325,6 @@ footer div:nth-child(2) {
 
 .custom-checkbox:disabled+label::before {
     background-color: #e9ecef;
+=======
+>>>>>>> 20084164bc6d4db007b8909afa0f303a6bb0173c
 }
