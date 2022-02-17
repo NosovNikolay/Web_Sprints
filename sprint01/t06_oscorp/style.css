@@ -1,0 +1,222 @@
+.header {
+    display: flex;
+    padding: 10px;
+    background-color: #823028;
+}
+
+.navigation {
+    padding: 10px 20px 10px 10px;
+    background-color: #ccc;
+}
+
+.name {
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+}
+
+.menu {
+    margin-left: 150px;
+}
+
+.search {
+    border-top: #823028;
+    border-left: #823028;
+    border-right: #823028;
+    margin-left: 100px;
+    background-color: #823028;
+}
+
+.phone {
+    align-self: right;
+    text-align: right;
+}
+
+:placeholder-shown {
+    text-align: center;
+}
+
+.settings_upper {
+    padding: 5px 50px 15px 15px;
+}
+
+#max {
+    margin-left: 110px;
+    text-align: right;
+}
+
+.check-with-label {
+    display: none;
+}
+
+.check-with-label:checked+.All {
+    background-color: red;
+}
+
+.check-with-label:checked+.All::after {
+    content: "  \2713";
+}
+
+.myUrl {
+    display: flex;
+    background-color: #d6d5ca;
+    padding: 10px;
+}
+
+.myUrl div:nth-child(1) {
+    color: #823028;
+}
+
+.myUrl div:nth-child(4) {
+    display: none;
+}
+
+.myUrl div:nth-child(3) a {
+    text-decoration: none;
+    color: black;
+}
+
+.myUrl div:nth-child(5) {
+    display: none;
+}
+
+.myUrl div {
+    text-align: center;
+    width: 50px;
+}
+
+.checkboxes {
+    display: flex;
+}
+
+.All {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    width: 100px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.fir {
+    margin-left: 30px;
+}
+
+.check-with-label {
+    display: none;
+}
+
+.check-with-label:checked+.All {
+    background-color: black;
+}
+
+.check-with-label:checked+.All::after {
+    content: "  \2713";
+}
+
+.Catalog h1 {
+    padding-left: 30px;
+}
+
+.Content {
+    padding-top: 50px;
+    display: flex;
+}
+
+.detailsPage {
+    display: flex;
+}
+
+.detailsPage div {
+    text-align: center;
+}
+
+.firstDetail {
+    flex: 1;
+}
+
+.secondDetail {
+    flex: 1;
+    text-align: left!important;
+    padding-top: 40px;
+}
+
+.firstDetail img {
+    border-radius: 150px;
+}
+
+.secondDetail div {
+    padding: 10px;
+    text-align: left;
+}
+
+.secondDetail div:nth-child(3) {
+    font-style: italic;
+}
+
+.secondDetail div:nth-child(2) {
+    font-weight: bold;
+}
+
+.secondDetail input {
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: #853129;
+}
+
+.comments {
+    display: flex;
+}
+
+.comments div {
+    border-radius: 20px;
+    background-color: #d6d5ca;
+}
+
+.comments div img {
+    width: 200px;
+}
+
+.floppa {
+    padding-left: 60px;
+}
+
+footer {
+    display: flex;
+}
+
+footer div {
+    padding: 20px;
+    background-color: #823028;
+    width: 50%;
+    color: white;
+}
+
+footer div:nth-child(2) {
+    text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+    .Content {
+        display: block;
+    }
+    header {
+        display: none
+    }
+    .mainFT {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .detailsPage {
+        display: block;
+        text-align: center;
+    }
+    .detailsPage div:not(.noth) {
+        text-align: center;
+    }
+}
