@@ -1,15 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+    <title>Brackets</title>
     <meta charset="utf-8">
-    <title>Word for word</title>
-    <meta name="description" content="t09. Word for word">
+    <meta name="description" content="t08. Brackets">
+    <script src="http://chaijs.com/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script>
+        mocha.setup('bdd');
+        let assert = chai.assert;
+    </script>
 </head>
 
 <body>
-    <h1>Word for word</h1>
-    <script src="js/script.js">
+    <h1>Brackets</h1>
+    <script src="js/script.js"></script>
+    <script src="js/test.js"></script>
+    <div id="mocha"></div>
+    <script>
+        mocha.run();
     </script>
 </body>
 

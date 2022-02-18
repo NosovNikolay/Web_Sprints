@@ -28,5 +28,5 @@ function checkBrackets(str) {
     return result
 }
 
-console.log(checkBrackets('1)()(())2(()'));
-console.log(checkBrackets(NaN));
+// console.log(checkBrackets('1)()(())2(()'));
+// console.log(checkBrackets(NaN));
