@@ -53,34 +53,32 @@ class Coins {
 }
 
 const guestList = new GuestList();
-let mary = { name: 'Mary' },
-    sof = { name: 'Sofie' },
-    mark = { name: 'Mark' },
-    ant = { name: 'Antony' },
-    val = { name: 'Valery' }
-guestList.add(mary);
-guestList.add(sof);
-guestList.add(mark);
-guestList.add(sof);
-guestList.add(ant);
-guestList.add(val);
+let kolya = { name: 'Kolya' },
+    andrew = { name: 'Andrew' },
+    kirill = { name: 'Kirill' },
+    anton = { name: 'Anton' },
+    valera = { name: 'valeraera' }
+guestList.add(kolya);
+guestList.add(andrew);
+guestList.add(kirill);
+guestList.add(andrew);
+guestList.add(anton);
+guestList.add(valera);
 console.log(guestList.guestList);
 
-console.log(guestList.isInvited(mary));
-console.log(guestList.isInvited("me"));
+console.log(guestList.isInvited(kolya));
+console.log(guestList.isInvited("Gena"));
 
-guestList.removeGuest(mark);
+guestList.removeGuest(kirill);
 console.log(guestList.guestList);
 
 console.log(' ');
 
 const menu = new Menu();
-menu.add("Cookies", 2);
+menu.add("Fish", 2);
 menu.add("Salad", 5.5);
 menu.add("Ribs", 8);
 menu.add("Ribs", 234);
-menu.add("Steak", 12.5);
-menu.add("Pie", 6.99);
 menu.printAll();
 
 console.log(' ');

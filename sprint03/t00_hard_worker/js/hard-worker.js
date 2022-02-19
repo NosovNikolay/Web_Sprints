@@ -1,7 +1,6 @@
 'use strict';
 
 class HardWorker {
-
     set age(value) {
         if (value >= 1 && value < 100)
             this._age = value
@@ -17,8 +16,7 @@ class HardWorker {
     }
 }
 
-
-worker = new HardWorker;
+const worker = new HardWorker;
 worker.name = 'Bruce';
 console.log(worker.name); // Bruce
 worker.age = 50;

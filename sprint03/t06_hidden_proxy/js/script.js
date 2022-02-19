@@ -21,7 +21,6 @@ let validator = {
             throw new Error(`Property ${PropertyKey} do not exist...`);
         }
     }
-
 }
 
 let person = new Proxy({}, validator);
