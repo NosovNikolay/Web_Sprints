@@ -1,0 +1,57 @@
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainDiv {
+    text-align: center;
+    width: 50%;
+    margin: 100px auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.add {
+    color: white;
+    background-color: #45d3b4;
+}
+
+.add:hover {
+    color: white;
+    background-color: #14c9a2;
+}
+
+textarea {
+    border-color: #45d3b4;
+    border-radius: 5px;
+}
+
+textarea:hover {
+    box-shadow: 0 0 10px #719ECE;
+}
+
+textarea:focus {
+    outline: none !important;
+    border: 1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.input-text {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+#text {
+    color: rgb(0, 19, 129);
+    margin-top: -10px;
+}

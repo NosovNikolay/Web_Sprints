@@ -1,6 +1,6 @@
 #placeholder {
     border: 3px solid black;
-    width: 270px;
+    width: 350px;
     margin: auto;
     position: relative;
 }
@@ -9,7 +9,7 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 220px;
+    width: 300px;
     margin: 5px;
     padding: 10px;
     background: #707070;
@@ -27,7 +27,7 @@ td {
     border: 1px solid white;
     padding: 10px 15px;
     text-align: center;
-    width: 90px;
+    width: 210px;
 }
 
 #table tr:first-child td {

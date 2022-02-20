@@ -4,36 +4,40 @@ let createP = (str) => {
     list.append(p);
 }
 
-let addCookies = () => {
+let getStorage = () => {
+    if (window.localStorage.length === 0) createP('[Empty]');
+    for (let i = 0; i < window.localStorage.length; i += 1) {
+        createP(`--> ${window.localStorage.getItem(i)}`)
+    }
+}
+
+let addToStorage = () => {
+
     let children = document.querySelectorAll('#cookiesList p');
     if (children.item(0) != null && children.item(0).textContent === '[Empty]') {
         children.item(0).textContent = ''
     }
 
-    let expDate, textValue = input.value.trim();
+    let textValue = input.value.trim();
     if (input.value === '' || textValue.length === 0) {
         return;
     }
-    expDate = new Date();
-    expDate.setDate(expDate.getDate() + 30);
-    document.cookie = `${cookieCount}=${textValue};expires=${expDate.toUTCString()};path=/`;
+    window.localStorage.setItem(window.localStorage.length, textValue)
     createP(`--> ${textValue}`);
     input.value = '';
-    cookieCount++;
 }
 
 
-let clearCookies = () => {
+let clearStorage = () => {
+    if (!confirm('are you sure?')) return
+
     document.querySelectorAll('#cookiesList p').forEach(p => p.remove());
     createP('[Empty]');
 
-    let all = document.cookie.split(';');
-    for (let i in all)
-        document.cookie = `${all[i].split('=')[0]}='';expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/`;
-
-    cookieCount = 0;
+    window.localStorage.clear()
 }
 
-let input = document.getElementById('aboba')
+let input = document.getElementById('textArea')
 let list = document.getElementById('cookiesList')
-let cookieCount = 0
+
+getStorage()

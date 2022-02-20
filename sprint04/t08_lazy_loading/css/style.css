@@ -1,0 +1,61 @@
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 900px;
+    background-color: #f2f2f2;
+}
+
+.tabsNav {
+    margin: 10px 0;
+    border-right: 2px solid #fff;
+}
+
+.tabsNavItem {
+    width: 150px;
+    border-left: 4px solid transparent;
+    cursor: pointer;
+    flex: 1;
+    padding: 20px;
+}
+
+.tabsNavItem.isActive {
+    border-color: blue;
+}
+
+.tab {
+    background-color: #f2f2f2;
+    display: none;
+    padding: 20px;
+}
+
+.tab img {
+    height: 300px;
+}
+
+.tab.isActive {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.aboutFilm {
+    margin-right: 20px;
+    padding-bottom: 70px;
+}
+
+.Actors {
+    display: flex;
+    text-decoration: none;
+}
+
+.Actors>a {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+#taskName {
+    text-align: center;
+}

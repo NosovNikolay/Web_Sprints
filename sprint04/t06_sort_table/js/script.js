@@ -1,7 +1,7 @@
 'use strict';
 
-let x = 3;
-let y = 10;
+let rows = 3;
+let cols = 10;
 let data = ['Name', 'Strength', 'Age',
     "Black Panther", '66', '53',
     'Captain America', '79', '137',
@@ -24,9 +24,9 @@ function tableCreate() {
     tbl = document.createElement('table');
     tblBody = document.createElement('tbody');
 
-    for (let j = 0; j < y; ++j) {
+    for (let j = 0; j < cols; ++j) {
         row = document.createElement('tr');
-        for (let i = 0; i < x; ++i) {
+        for (let i = 0; i < rows; ++i) {
             cell = document.createElement('td');
 
             cell.setAttribute('id', id);
@@ -44,9 +44,6 @@ function tableCreate() {
     tbl.setAttribute('id', 'table');
 }
 
-/**
- * JS sort table fields
- */
 let tableSort = (n) => {
     let tbl, rows, switching, shouldSwitch,
         i, row1, row2, direction, switchCount = 0;

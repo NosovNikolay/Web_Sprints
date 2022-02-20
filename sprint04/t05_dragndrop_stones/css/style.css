@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#mainDiv {
+    background-color: azure;
+    height: 100vh;
+}
+
+.square {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg)
+}
+
+.square[movable="false"] {
+    border: 2px dashed black;
+}
