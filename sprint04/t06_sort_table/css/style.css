@@ -1,0 +1,36 @@
+#placeholder {
+    border: 3px solid black;
+    width: 270px;
+    margin: auto;
+    position: relative;
+}
+
+#notification {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 220px;
+    margin: 5px;
+    padding: 10px;
+    background: #707070;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    background: #d3d3d3;
+    border: 1px solid white;
+    padding: 10px 15px;
+    text-align: center;
+    width: 90px;
+}
+
+#table tr:first-child td {
+    background: #d33424;
+    cursor: pointer;
+}

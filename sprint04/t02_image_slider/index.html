@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="slideshow-container">
+
+        <div class="hide fade">
+            <img src="https://i.postimg.cc/05Gd8J4x/1-1-2.jpg">
+        </div>
+
+        <div class="hide fade">
+            <img src="https://i.postimg.cc/jjJPBWfp/5-5.png">
+        </div>
+
+        <div class="hide fade">
+            <img src="https://i.postimg.cc/jjJPBWfp/5-5.png">
+        </div>
+
+        <a class="prev" onclick="listSlides(-1)">&#10094;</a>
+        <a class="next" onclick="listSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
