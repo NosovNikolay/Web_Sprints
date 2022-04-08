@@ -1,27 +1,42 @@
-const express = require('express')
+const http = require('http')
 const path = require('path')
-const ip = require('ip')
 const os = require('os')
+const url = require('url');
 
-const PORT = 8000
+const hostname = 'localhost'
+const port = 3000
 
-const app = express()
+const nets = os.networkInterfaces()
+const results = {}
 
-app.listen(PORT, () => {
-    console.log(`Server has been started on port ${PORT}...`)
-})
+for (const name of Object.keys(nets)) {
+  for (const net of nets[name]) {
+    if (net.family === 'IPv4' && !net.internal) {
+      if (!results[name]) {
+        results[name] = []
+      }
+      results[name].push(net.address)
+    }
+  }
+}
 
-//http://localhost:8000/?param1=fff&param2=123&param3=aboba
-app.get('/', (req, res) => {
+const ip = results.en0[0]
+
+const server = http
+  .createServer((req, res) => {
+    console.log(path.basename(__filename))
+    console.log(process.argv)
+    console.log(ip)
+    console.log(os.hostname())
+    console.log('HTTP', req.httpVersion)
+    console.log(req.method)
+    console.log(req.headers['user-agent'])
     console.log(
-        `a name of file of the executed script: ${path.basename(__filename)}\n` +
-        `arguments passed to the script: ${process.argv.slice(2)}\n` +
-        `IP address of the server ${ip.address()}\n` +
-        `a name of host that invokes the current script: ${os.hostname()}\n` +
-        `a name and a version of the information protocol: ${req.protocol}\n` +
-        `a query method: ${req.method}\n` +
-        `User-Agent information: ${req.get('user-agent')}\n` +
-        `IP address of the client: ${ip.address()}\n` +
-        `a list of parameters passed by URL: ${req.url.slice(1)}`
+      req.headers['x-forwarded-for'] || req.socket.remoteAddress || null
     )
-})
+    console.log(url.parse(req.url, true).query);
+    res.end('hello')
+  })
+  .listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`)
+  })

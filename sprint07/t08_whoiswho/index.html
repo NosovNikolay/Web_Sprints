@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WhoIsWho</title>
+    <style>
+        table {
+            margin: 10px;
+        }
+        td, th {
+            padding: 5px;
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+<body>
+<h1>Parsing CSV data</h1>
+<form id="uploadForm">
+    <label for="fileInput">
+        <b>Upload file:</b>
+        <input type="file" name="fileInput" id="fileInput">
+    </label>
+    <input type="submit" value="Upload">
+</form>
+<form style="display: none" id="filterForm">
+    <hr>
+    <label>
+        <b>Filter:</b>
+        <select name="valueSelect" id="valueSelect"></select>
+    </label>
+    <input type="submit" value="Apply">
+</form>
+<script src="./script.js"></script>
+</body>
+</html>

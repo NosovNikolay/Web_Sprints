@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notepad mini</title>
+    <style>
+        input, textarea, select, button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1>Notepad mini</h1>
+<form id="createForm">
+    <input type="text" name="name" id="noteName" placeholder="name" required>
+    <br>
+    <select name="importance" id="noteImportance">
+        <option value="low">low</option>
+        <option value="medium">medium</option>
+        <option value="high">high</option>
+    </select>
+    <br>
+    <textarea name="content" id="noteContent" cols="30" rows="3" placeholder="text of note"></textarea>
+    <br>
+    <input type="submit" value="Create">
+</form>
+<h2 id="listHeader"></h2>
+<ul id="list"></ul>
+<div id="selectedNote" style="display:none">
+    <h3>Detail of "<span id="selectedNoteHeader"></span>"</h3>
+    <ul>
+        <li>Date: <span id="selectedNoteCreated"></span></li>
+        <li>Name: <span id="selectedNoteName"></span></li>
+        <li>Importance: <span id="selectedNoteImportance"></span></li>
+    </ul>
+    <pre id="selectedNoteContent"></pre>
+</div>
+<script src="./Note.js"></script>
+<script src="./NotePad.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

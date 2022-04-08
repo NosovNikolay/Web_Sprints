@@ -1,0 +1,14 @@
+{
+  "name": "t06_marvel_api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "koa": "^2.13.4",
+    "koa-router": "^10.1.1"
+  }
+}

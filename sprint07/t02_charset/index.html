@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <title>Charset</title>
+    <meta name="description" content="t02. Charset">
+</head>
+<body>
+<h1>Charset</h1>
+<form id="charsetForm">
+    <label for="inputString">
+        Change charset
+        <input type="text" name="inputString" id="inputString">
+    </label>
+    <br>
+    <label for="charsets">Select charset or several charsets</label>
+    <select name="charsets" id="charsets" multiple>
+        <option value="UTF-8">UTF-8</option>
+        <option value="ISO-8859-1">ISO-8859-1</option>
+        <option value="Windows-1252">Windows-1252</option>
+    </select>
+    <input type="submit" value="Change charset">
+    <input type="reset" value="Clear">
+
+    <div id="previews"></div>
+
+    <script src="script.js"></script>
+</form>
+</body>
+</html>

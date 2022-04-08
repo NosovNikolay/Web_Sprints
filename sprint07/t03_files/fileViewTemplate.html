@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="t03. Files">
+    <title>Files</title>
+    <style>
+        .block {
+            border: 2px solid gray;
+            padding: 20px;
+        }
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<h1>File manager</h1>
+<form action="create-file" class="block">
+    <h2>Create a file</h2>
+    <label for="filename">
+        Filename
+        <input type="text" name="filename" id="filename">
+    </label>
+
+    <label for="content">
+        Content
+        <textarea name="content" id="content" cols="100" rows="7"></textarea>
+    </label>
+
+    <input type="submit" value="Create file">
+</form>
+<div class="block">
+    <h2>Files</h2>
+    {{files}}
+</div>
+<form class="block" style="display:{{display}}" action="delete-file">
+    <h2>Selected file</h2>
+
+    <h3>{{fileName}}</h3>
+
+    <h4>Content:</h4>
+
+    <p>{{fileContent}}</p>
+
+    <input type="submit" value="Delete file">
+</form>
+</body>
+</html>

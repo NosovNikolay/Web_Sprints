@@ -1,0 +1,32 @@
+body {
+    padding: 10px;
+    margin: 0;
+}
+
+.item {
+    margin: 10px 10px 10px 0;
+}
+
+.value, .key {
+    padding: 10px;
+    display: inline-block;
+}
+
+.value.object {
+    background-color: #00000040;
+    color: #ffffffee;
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 10px;
+    grid-column: 2;
+}
+
+.value.number {
+    color: lightgreen;
+    background: #1c1c1c;
+}
+
+.value.string {
+    color: coral;
+    background: #1c1c1c;
+}

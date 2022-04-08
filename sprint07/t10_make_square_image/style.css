@@ -1,0 +1,20 @@
+:root {
+    --gap: 50px
+}
+
+h1, form {
+    text-align: center;
+}
+
+input {
+    margin-bottom: 10px;
+}
+input[type="text"] {
+    width: 300px
+}
+
+#result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

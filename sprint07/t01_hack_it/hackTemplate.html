@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hack it!</title>
+    <meta name="description" content="t01. Hack it!">
+    <style>
+        .status {
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Password</h1>
+
+{{status}}
+
+<form id="hackForm">
+    <b>Password saved at session</b>
+    <br>
+
+    <b>Password for saving in session {{hash}}</b>
+
+    <br>
+
+    <label>
+        <b>Try to guess</b>
+        <input type="text" placeholder="Password to session" name="password">
+        <input type="submit" value="Check password">
+    </label>
+</form>
+<form action="clear">
+    <input type="submit" value="Clear">
+</form>
+
+</body>
+</html>
