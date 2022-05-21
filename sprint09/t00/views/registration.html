@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:thjs="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Tetiana Rohalska">
+    <meta name="description" content="t01. Login">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="general.css"/>
+    <link rel="stylesheet" href="sign.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+</head>
+
+<body>
+<div class="backcolor"></div>
+<div class="body-block shadow-large page_width">
+    <section class="section4">
+        <main>
+            <div class="frame">
+                <form class="form-signin" action="/signup" method="post">
+                    <label for="login">Login</label>
+                    <input name="login" id="login" class="form-styling" type="text" thjs:value="${login}" required autofocus/>
+                    <label for="full_name">Full name</label>
+                    <input name="full_name" id="full_name" class="form-styling" type="text" thjs:value="${full_name}" required/>
+                    <label for="email">Email</label>
+                    <input name="email" id="email" class="form-styling" thjs:value="${email}" type="email" required/>
+                    <div>
+                        <label for="password">Password</label>
+                        <input id="password" class="form-styling" type="password" name="password" autocomplete="on" required/>
+                        <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                    </div>
+                    <div>
+                        <label for="confirm_password" >Confirm password</label>
+                        <input id="confirm_password" class="form-styling" type="password" name="confirm_password" required
+                               autocomplete="on" />
+                        <span toggle="#confirm_password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                    </div>
+                    <input class="btn-signup" type="submit" value="Sign up">
+                </form>
+                <div style="color: red; text-align: center">
+                    <p><span thjs:text="${errorMsg}"></span></p>
+                </div>
+            </div>
+        </main>
+    </section>
+</div>
+
+</body>
+
+<script>
+    $(".toggle-password").click(function() {
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        let input = $($(this).attr("toggle"));
+        if (input.attr("type") === "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+</script>
+
+</html>

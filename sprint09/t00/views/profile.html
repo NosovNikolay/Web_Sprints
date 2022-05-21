@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:thjs="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Tetiana Rohalska">
+    <meta name="description" content="t01. Login">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="general.css"/>
+    <link rel="stylesheet" href="sign.css"/>
+</head>
+
+<body>
+<div class="backcolor"></div>
+<div class="body-block shadow-large page_width">
+    <section class="section4">
+        <main>
+            <div class="frame">
+                <h1>Profile</h1>
+                <p>Full name: <span thjs:text="${full_name}"></span></p>
+                <p>E-mail: <span thjs:text="${email}"></span></p>
+                <p>Login: <span thjs:text="${login}"></span></p>
+                <p>Role: <span thjs:text="${user_role}"></span></p>
+            </div>
+        </main>
+    </section>
+</div>
+
+</body>
+</html>
